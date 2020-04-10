@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CSR SignIn Test Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="listeners.listeners" />
+	</listeners>
+
+<test
+		name="QACSRSingInTest">
+		<classes>
+			<class name="csrSignInPageTestCase.SignInPageTest" />		
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

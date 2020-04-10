@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CSR Pagination Test Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="listeners.listeners" />
+	</listeners>
+  <test
+		name="PaginationTest">
+		<classes>
+			<class name="csrSignInPageTestCase.SignInPageTest" />
+			  <class name="csrNavigationTestcasess.ScheduledPaymentsReportTest" />
+			<class name="generalPaginationTestCases.ScheduledPaymentsPaginationtest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

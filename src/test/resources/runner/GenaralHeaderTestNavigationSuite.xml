@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CSR Navigation Test Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="listeners.listeners" />
+	</listeners>
+<test
+		name="NavigationTest">
+		<classes>
+			<class name="csrSignInPageTestCase.SignInPageTest" />
+		    <class name="csrNavigationTestcasess.GoToCsrActivitiesReportTest" />
+		    <class name="csrNavigationTestcasess.AdminActivitiesReportTest" />
+		    <class name="csrNavigationTestcasess.CsrJobStatusReportTest" />
+		    <class name="csrNavigationTestcasess.OsgActivitiesReportTest" />
+		    <class name="csrNavigationTestcasess.AutoManagerReportTest" />
+		    <class name="csrNavigationTestcasess.BatchReportTest" />
+		    <class name="csrNavigationTestcasess.PaymentPlanReportTest" />
+			<class name="csrNavigationTestcasess.PaymentReportTest" />	
+			<class name="csrNavigationTestcasess.RegisteredUsersReportTest" />
+			<class name="csrNavigationTestcasess.ReturnReportTest" />
+			<class name="csrNavigationTestcasess.ScheduledPaymentsReportTest" />
+			<class name="csrNavigationTestcasess.TransactionReportTest" />	
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

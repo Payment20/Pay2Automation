@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Customer test Suite">
+
+  	<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      <listener class-name="listeners.listeners"/>
+  	</listeners>
+ 
+	<test name="ValidateE2ECustomenrsLoginTEST">
+		<classes>
+			<class name="apLoginTestCases.LoginE2ECustomers" />
+		</classes>
+	</test>
+	
+	<test name="ValidateProductionCustomersLoginTest">
+		<classes>
+			<class name="apLoginTestCases.LoginProductionCustomer" />
+		</classes>
+	</test> 
+ 	
+	<test name="ValidateQACustomersTest">
+		<classes>
+			<class name="apLoginTestCases.LoginQaCustomers" />
+		</classes>
+	</test>	
+</suite> <!-- Suite -->

@@ -1,0 +1,33 @@
+10/04/2020 13:59:05 devpinoyLogger Config file loaded !!!
+10/04/2020 13:59:05 devpinoyLogger Working with chrome
+10/04/2020 13:59:08 devpinoyLogger Loading the Test Environment from config file
+10/04/2020 13:59:08 devpinoyLogger Test Environment: qacsr
+10/04/2020 13:59:08 devpinoyLogger Application: payment20csr
+10/04/2020 13:59:09 devpinoyLogger Navigating to: https://csrqa.billbridge.com/login/clientlogin
+10/04/2020 13:59:11 devpinoyLogger Page Objects loaded
+10/04/2020 13:59:11 devpinoyLogger CSR Pagination Test Suite Start
+10/04/2020 13:59:12 devpinoyLogger Database connection established
+10/04/2020 13:59:12 devpinoyLogger PaginationTest Test Start
+10/04/2020 13:59:12 devpinoyLogger doLogin  Started
+10/04/2020 13:59:12 devpinoyLogger Web Element found: 
+10/04/2020 13:59:12 devpinoyLogger LoginFunctions loaded
+10/04/2020 13:59:12 devpinoyLogger Login into CSR QA Portal
+10/04/2020 13:59:12 devpinoyLogger Typing in field: userName the value: PayBoxQA
+10/04/2020 13:59:13 devpinoyLogger Typing in field: password the value: Pass@123
+10/04/2020 13:59:13 devpinoyLogger Clicking on Element : Sign in
+10/04/2020 13:59:13 devpinoyLogger Web Element found: 
+10/04/2020 13:59:13 devpinoyLogger DashboardAPFunctions loaded
+10/04/2020 13:59:13 devpinoyLogger doLogin  Successfully passed
+10/04/2020 13:59:13 devpinoyLogger goToScheduledPaymentsReportTest  Started
+10/04/2020 13:59:13 devpinoyLogger Navigating to: Scheduled Payment report
+10/04/2020 13:59:19 devpinoyLogger Web Element found: 
+10/04/2020 13:59:19 devpinoyLogger CsrScheduledPaymentsReportFunctionPage loaded
+10/04/2020 13:59:19 devpinoyLogger goToScheduledPaymentsReportTest  Successfully passed
+10/04/2020 13:59:19 devpinoyLogger doSchedulePaymentPaginationTest  Started
+10/04/2020 13:59:29 devpinoyLogger Web Element not found: NO ELEMENT FOUND
+10/04/2020 13:59:29 devpinoyLogger doSchedulePaymentPaginationTest  Failed
+10/04/2020 13:59:30 devpinoyLogger PaginationTest Test Completed
+10/04/2020 13:59:31 devpinoyLogger Driver quit
+10/04/2020 13:59:31 devpinoyLogger Closing Database Connection
+10/04/2020 13:59:31 devpinoyLogger CSR Pagination Test Suite Completed
+10/04/2020 13:59:38 devpinoyLogger Sucessfully Sent mail to All Users
