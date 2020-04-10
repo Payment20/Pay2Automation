@@ -8,7 +8,7 @@ import csrFunctionPage.SignInPageFunction;
 
 //Test CSR SignIn page
 public class SignInPageTest extends TestBase{
-
+// test to signIn Users
 	@Test
 	public void doLogin() {
 		SignInPageFunction signInPage = new SignInPageFunction();
