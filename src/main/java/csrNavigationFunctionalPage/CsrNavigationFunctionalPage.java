@@ -233,20 +233,18 @@ public class CsrNavigationFunctionalPage extends Page{
 	
 	
 	public CsrScheduledPaymentsReportFunctionPage  goToScheduledPaymentReport() {
-		System.out.println(" here a ");
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		log.debug("Navigating to: Scheduled Payment report");
 		test.log(LogStatus.INFO, "Navigating to: Scheduled Payment report");
-		System.out.println(" here 0 ");
+		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getScheduledPaymentsReport();
-		System.out.println(" here 1 ");
+		
 		Actions action = new Actions(driver);
 		elementToHover.click();
 		action.moveToElement(elementToHover).build().perform(); 
-		System.out.println(" here 2 ");
 		elementToClick.click();
-		System.out.println(" here 3 ");
+		
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrScheduledPaymentsReportFunctionPage();
 		 
