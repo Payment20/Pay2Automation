@@ -33,7 +33,7 @@ public class CsrNavigationFunctionalPage extends Page{
 	Page page = new Page();
 	 
 	/*
-	 * to navigate to all pages  
+	 * this function is to navigate to all reports   
 	 */
 	public CsrActivitiesReportFunctionPage  goToActivityReport() {
 	 
