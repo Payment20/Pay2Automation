@@ -32,6 +32,15 @@ public class CsrNavigationFunctionalPage extends Page{
 	CsrGeneralHeaderPageObj csrNavigateTo = new CsrGeneralHeaderPageObj();
 	Page page = new Page();
 	 
+	/**
+	 * @author milou.rene
+	 *  Function to over over the web element
+	 */
+	private  void hoverOver(WebElement ElmntOver, WebElement elmntClick) {
+		Actions action = new Actions(driver);
+		action.moveToElement(ElmntOver).click().build().perform(); 
+		elmntClick.click();
+	}
 	/*
 	 * this function is to navigate to all reports   
 	 */
@@ -42,14 +51,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getCsrActivitiesReport();
-		 /**
-		  * from action Method from Page implement here due to JS incompatibility
-		  */
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrActivitiesReportFunctionPage();
 		 
@@ -61,18 +63,9 @@ public class CsrNavigationFunctionalPage extends Page{
 		log.debug("Navigating to: Activity report");
 		test.log(LogStatus.INFO, "Navigating to: Rctivity report");
 		
-		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getAdminActivitiesReport();
-		
-		//hoverOnElement(elementToHover, elementToClick );
-		//hoverAndClickOnElement(elementToHover, elementToClick);
-		
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrAdminActivitiesReportFunctionPage();
 		 
@@ -86,11 +79,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getJobsStatusReport();
-		 
-		Actions action = new Actions(driver);
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrJobsStatusReportFunctionPage();
 		 
@@ -105,12 +94,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		 
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getOsgActivitiesReport();
-		 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrOsgActivitiesReportFunctionPage();
 		 
@@ -125,12 +109,7 @@ public class CsrNavigationFunctionalPage extends Page{
 	 
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getAutoPaymentManagersReport();
-		 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrAutoPaymentManagersReportFunctionPage();
 		 
@@ -144,12 +123,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getBatchReprot();
-		 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrBatchReportFunctionPage();
 		 
@@ -160,16 +134,10 @@ public class CsrNavigationFunctionalPage extends Page{
 		 
 		log.debug("Navigating to: PAyment Plan report");
 		test.log(LogStatus.INFO, "Navigating to: Payment Plan report");
-		
 		 
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getPaymentPlansReport();
-	 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrPaymentPlansReportFunctionPage();
 		 
@@ -182,12 +150,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getPaymentReport();
-		 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrPaymentReportFunctionPage();
 		 
@@ -201,12 +164,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		 
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getRegisteredUsersReport();
-		 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrRegisteredUsersReportFunctionPage();
 		 
@@ -220,12 +178,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		 
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getReturnReport();
-		 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrReturnReportFunctionPage();
 		 
@@ -233,18 +186,12 @@ public class CsrNavigationFunctionalPage extends Page{
 	
 	
 	public CsrScheduledPaymentsReportFunctionPage  goToScheduledPaymentReport() {
-		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		log.debug("Navigating to: Scheduled Payment report");
 		test.log(LogStatus.INFO, "Navigating to: Scheduled Payment report");
 		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getScheduledPaymentsReport();
-		
-		Actions action = new Actions(driver);
-		elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrScheduledPaymentsReportFunctionPage();
 		 
@@ -258,12 +205,7 @@ public class CsrNavigationFunctionalPage extends Page{
 		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getTransactionReport();
-		 
-		Actions action = new Actions(driver);
-		//elementToHover.click();
-		action.moveToElement(elementToHover).build().perform(); 
-		elementToClick.click();
-		
+		hoverOver(elementToHover, elementToClick);
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrTransactionReportFunctionPage();
 		 
