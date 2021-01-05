@@ -14,7 +14,7 @@ public class CsrPaymentPlansReportNavigationPageObj extends Page {
 	private By pageTitle = By.xpath("//*[@id=\"CsrBody\"]/div[4]/div/div/div[1]/div/div/div/ol/li/a");
 	private By paymentPlansReport =By.xpath("");
 	
-	
+ 
 	public WebElement getPageTitle() {
 		return Page.driver.findElement(pageTitle);
 	}

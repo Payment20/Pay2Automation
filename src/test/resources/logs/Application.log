@@ -1,33 +1,25 @@
-10/04/2020 13:59:05 devpinoyLogger Config file loaded !!!
-10/04/2020 13:59:05 devpinoyLogger Working with chrome
-10/04/2020 13:59:08 devpinoyLogger Loading the Test Environment from config file
-10/04/2020 13:59:08 devpinoyLogger Test Environment: qacsr
-10/04/2020 13:59:08 devpinoyLogger Application: payment20csr
-10/04/2020 13:59:09 devpinoyLogger Navigating to: https://csrqa.billbridge.com/login/clientlogin
-10/04/2020 13:59:11 devpinoyLogger Page Objects loaded
-10/04/2020 13:59:11 devpinoyLogger CSR Pagination Test Suite Start
-10/04/2020 13:59:12 devpinoyLogger Database connection established
-10/04/2020 13:59:12 devpinoyLogger PaginationTest Test Start
-10/04/2020 13:59:12 devpinoyLogger doLogin  Started
-10/04/2020 13:59:12 devpinoyLogger Web Element found: 
-10/04/2020 13:59:12 devpinoyLogger LoginFunctions loaded
-10/04/2020 13:59:12 devpinoyLogger Login into CSR QA Portal
-10/04/2020 13:59:12 devpinoyLogger Typing in field: userName the value: PayBoxQA
-10/04/2020 13:59:13 devpinoyLogger Typing in field: password the value: Pass@123
-10/04/2020 13:59:13 devpinoyLogger Clicking on Element : Sign in
-10/04/2020 13:59:13 devpinoyLogger Web Element found: 
-10/04/2020 13:59:13 devpinoyLogger DashboardAPFunctions loaded
-10/04/2020 13:59:13 devpinoyLogger doLogin  Successfully passed
-10/04/2020 13:59:13 devpinoyLogger goToScheduledPaymentsReportTest  Started
-10/04/2020 13:59:13 devpinoyLogger Navigating to: Scheduled Payment report
-10/04/2020 13:59:19 devpinoyLogger Web Element found: 
-10/04/2020 13:59:19 devpinoyLogger CsrScheduledPaymentsReportFunctionPage loaded
-10/04/2020 13:59:19 devpinoyLogger goToScheduledPaymentsReportTest  Successfully passed
-10/04/2020 13:59:19 devpinoyLogger doSchedulePaymentPaginationTest  Started
-10/04/2020 13:59:29 devpinoyLogger Web Element not found: NO ELEMENT FOUND
-10/04/2020 13:59:29 devpinoyLogger doSchedulePaymentPaginationTest  Failed
-10/04/2020 13:59:30 devpinoyLogger PaginationTest Test Completed
-10/04/2020 13:59:31 devpinoyLogger Driver quit
-10/04/2020 13:59:31 devpinoyLogger Closing Database Connection
-10/04/2020 13:59:31 devpinoyLogger CSR Pagination Test Suite Completed
-10/04/2020 13:59:38 devpinoyLogger Sucessfully Sent mail to All Users
+04/01/2021 15:18:49 devpinoyLogger Config file loaded !!!
+04/01/2021 15:18:49 devpinoyLogger Working with chrome
+04/01/2021 15:19:22 devpinoyLogger Loading the Test Environment from config file
+04/01/2021 15:19:22 devpinoyLogger Test Environment: qacsr
+04/01/2021 15:19:22 devpinoyLogger Application: payment20csr
+04/01/2021 15:19:25 devpinoyLogger Navigating to: https://csrqa.billbridge.com/login/clientlogin
+04/01/2021 15:19:26 devpinoyLogger Page Objects loaded
+04/01/2021 15:19:26 devpinoyLogger CSR SignIn Test Suite Start
+04/01/2021 15:19:28 devpinoyLogger Database connection established
+04/01/2021 15:19:28 devpinoyLogger QACSRSingInTest Test Start
+04/01/2021 15:19:28 devpinoyLogger doLogin  Started
+04/01/2021 15:19:29 devpinoyLogger Web Element found: 
+04/01/2021 15:19:29 devpinoyLogger LoginFunctions loaded
+04/01/2021 15:19:29 devpinoyLogger Login into CSR QA Portal
+04/01/2021 15:19:29 devpinoyLogger Typing in field: userName the value: PayBoxQA
+04/01/2021 15:19:29 devpinoyLogger Typing in field: password the value: Pass@123
+04/01/2021 15:19:29 devpinoyLogger Clicking on Element : Sign in
+04/01/2021 15:19:29 devpinoyLogger Web Element found: 
+04/01/2021 15:19:29 devpinoyLogger DashboardAPFunctions loaded
+04/01/2021 15:19:29 devpinoyLogger doLogin  Successfully passed
+04/01/2021 15:19:30 devpinoyLogger QACSRSingInTest Test Completed
+04/01/2021 15:19:31 devpinoyLogger Driver quit
+04/01/2021 15:19:31 devpinoyLogger Closing Database Connection
+04/01/2021 15:19:31 devpinoyLogger CSR SignIn Test Suite Completed
+04/01/2021 15:19:38 devpinoyLogger Sucessfully Sent mail to All Users

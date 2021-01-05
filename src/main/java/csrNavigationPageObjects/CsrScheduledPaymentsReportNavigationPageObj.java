@@ -12,6 +12,7 @@ import pagebase.Page;
 public class CsrScheduledPaymentsReportNavigationPageObj extends Page{
 	
 	private By pageTitle = By.xpath("//*[@id=\"CsrBody\"]/div[4]/div/div/div[1]/div/div/div/ol/li/a");
+									 
 	private By scheduledPaymentsReport =By.xpath("") ;
 	private By scheduledPaymentsPaginationPullRight = By.xpath("//*[@id=\"datatable_paginate\"]/ul/li[7]");
 	private By scheduledPaymentsPaginationPullLeft = By.xpath("//*[@id=\"datatable_paginate\"]/ul/li[1]");

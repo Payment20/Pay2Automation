@@ -13,6 +13,7 @@ import pagebase.Page;
 public class CsrActivitiesReportNavigationPageObj extends Page{
 	
 	private By pageTitle = By.xpath("//*[@id=\"CsrBody\"]/div[4]/div/div/div[1]/div/div/div/ol/li/a");
+	 
 	private By csrActivitiesReport =By.xpath("") ;
 	private By csrActivityReportPaginationTable = By.xpath("");
 	
