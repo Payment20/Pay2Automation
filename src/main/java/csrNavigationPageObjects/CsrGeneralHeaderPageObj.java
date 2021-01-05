@@ -12,7 +12,8 @@ import pagebase.Page;
   */
 public class CsrGeneralHeaderPageObj {
 	 
-	private By csrReportHover = By.xpath("//*[@id=\"liReport\"]/button/span[1]");
+	private By csrReportHover = By.xpath("//*[@id=\"liReport\"]/button/span[1]"); 
+	private By csrSuportHover = By.xpath("//*[@id=\"liSupport\"]/div/a");  
 	private By csrUserHover = By.xpath("//*[@id=\"liUsers\"]/button/span[1]");
 	private By csrSetupHover = By.xpath("//*[@id=\"Setup\"]/button/span[1]");
 	private By csrActivitiesReport =By.xpath("//*[@id=\"liReport\"]/div/a[9]") ;
@@ -29,8 +30,20 @@ public class CsrGeneralHeaderPageObj {
 	private By scheduledPaymentsReport =By.xpath("//*[@id=\"liReport\"]/div/a[7]") ;
 	private By transactionReport  =By.xpath("//*[@id=\"liReport\"]/div/a[2]") ;
 	private By customerOverViewReport = By.xpath("//*[@id=\"liReport\"]/div/a[5]");
+	private By manageUsers = By.xpath("//*[@id=\"liUsers\"]/div/a[1]");
+	private By manageRoles = By.xpath("//*[@id=\"liUsers\"]/div/a[2]");  
+	private By clientDetails = By.xpath("//*[@id=\"Setup\"]/div/a[1]");
+	private By clientSetUp = By.xpath("//*[@id=\"Setup\"]/div/a[2]");
+	private By billingHierarchySetUp = By.xpath("//*[@id=\"lnkdbh\"]");
+	private By convenienceFeeSetUp = By.xpath("//*[@id=\"liStateFeeSetup\"]");
+	private By batchSchedule = By.xpath("//*[@id=\"liBatchTime\"]");
+	private By bankHolydays = By.xpath("//*[@id=\"liBankHoliday\"]");
+	private By OSGGatewaySetUp = By.xpath("//*[@id=\"liOsgGateway\"]");
+	private By programs = By.xpath("//*[@id=\"liProgrammenu\"]");
+	private By groups = By.xpath("//*[@id=\"liGroupmenu\"]");
+	private By fileViewerUtility = By.xpath("//*[@id=\"liFileViewer\"]");
 	
-	
+	 
 	//get and set WebElement 
 	
 	public WebElement getCsrReportHover() {
@@ -39,6 +52,14 @@ public class CsrGeneralHeaderPageObj {
 	
 	public By byCsrReportHovert() {
 		return csrReportHover;
+	}
+	
+	public WebElement getcsrSuportHover() {
+		return Page.driver.findElement(csrSuportHover);
+	}
+	
+	public By bycsrSuportHover() {
+		return csrSuportHover;
 	}
 	
 	public WebElement getCsrUserHover() {
@@ -167,5 +188,92 @@ public class CsrGeneralHeaderPageObj {
 	
 	public By byCustomerOverViewReport() {
 		return customerOverViewReport;
+	}
+	
+	public WebElement getManageUsers() {
+		return Page.driver.findElement(manageUsers);
+	}
+	
+	public By byManageUsers() {
+		return manageUsers;
+	}
+	
+	public WebElement getManageRoles() {
+		return Page.driver.findElement(manageRoles);
+	}
+	
+	public By byManageRoles() {
+		return manageRoles;
+	}
+	
+	public WebElement getClientDetails() {
+		return Page.driver.findElement(clientDetails);
+	}
+	
+	public By byClientdetails() {
+		return clientDetails;
+	}
+	public WebElement getClientSetUp() {
+		return Page.driver.findElement(clientSetUp);
+	}
+	
+	public By byClientSetUp() {
+		return clientSetUp;
+	}
+	public WebElement getBillingHierarchySetUp() {
+		return Page.driver.findElement(billingHierarchySetUp);
+	}
+	
+	public By byBillingHierarchySetUp() {
+		return billingHierarchySetUp;
+	}
+	public WebElement getConvenienceFeeSetUp() {
+		return Page.driver.findElement(convenienceFeeSetUp);
+	}
+	
+	public By byConvenienceFeeSetUp() {
+		return convenienceFeeSetUp;
+	}
+	public WebElement getBatchSchedule() {
+		return Page.driver.findElement(batchSchedule);
+	}
+	
+	public By byBatchSchedule() {
+		return batchSchedule;
+	}
+	public WebElement getBankHolydays() {
+		return Page.driver.findElement(bankHolydays);
+	}
+	
+	public By byBankHolydays() {
+		return bankHolydays;
+	}
+	public WebElement getOSGGatewaySetUp() {
+		return Page.driver.findElement(OSGGatewaySetUp);
+	}
+	
+	public By byOSGGatewaySetUp() {
+		return OSGGatewaySetUp;
+	}
+	public WebElement getPrograms() {
+		return Page.driver.findElement(programs);
+	}
+	
+	public By byPrograms() {
+		return programs;
+	}
+	public WebElement getGroups() {
+		return Page.driver.findElement(groups);
+	}
+	
+	public By byGroups() {
+		return groups;
+	}
+	public WebElement getFileViewerUtility() {
+		return Page.driver.findElement(fileViewerUtility);
+	}
+	
+	public By byFileViewerUtility() {
+		return fileViewerUtility;
 	}
 }

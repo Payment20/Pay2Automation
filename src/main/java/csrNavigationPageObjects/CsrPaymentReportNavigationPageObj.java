@@ -14,6 +14,9 @@ public class CsrPaymentReportNavigationPageObj extends Page{
     * @author milou.rene
     */
 	private By pageTitle = By.xpath("//*[@id=\"CsrBody\"]/div[4]/div/div/div[1]/div/div/div/ol/li/a");
+	
+ 
+	
 	private By paymentReport =By.xpath("") ;
 	
 	

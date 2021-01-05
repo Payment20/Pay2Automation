@@ -12,12 +12,12 @@ import generalFilterFunctionalPage.SearchAllFunctionalPage;
  */
 
 public class searchAllTest extends TestBase{
-	//Test case to Search All function 
+	//Test case to Search by search all 
 	@Test
 	public void doSearchAll() {
 	 
 		SearchAllFunctionalPage searchAllFunctionalPage = new SearchAllFunctionalPage();
 		searchAllFunctionalPage.checkSearchAllRadioBtn();
-		Reporter.log("Login To QA CSR Portal Successfully Executed!!!");
+		Reporter.log("Search All Successfully Executed!!!");
 	}
 }

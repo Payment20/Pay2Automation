@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Smoke Customer test Suite">
+<suite name="Smoke CSR test Suite">
 
-  	<listeners>
-      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-      <listener class-name="listeners.listeners"/>
-  	</listeners>
- 
-	<test name="ValidateE2ECustomenrsLoginTEST">
+ <listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="listeners.listeners" />
+	</listeners>
+<test
+		name="Navigate Smoke test for CSR">
 		<classes>
-			<class name="apLoginTestCases.LoginE2ECustomers" />
+			<class name="csrSignInPageTestCase.SignInPageTest" />	
+			<class name="csrNavigationTestcasess.ClientDetailsTest" />
+			<class name="csrNavigationTestcasess.SupportTest" /> 
+			 <class name="csrNavigationTestcasess.ManageUsersTest" />
+			 <class name="csrNavigationTestcasess.GoToCsrActivitiesReportTest" />
+			<class name="csrNavigationTestcasess.BillingHierarchySetUpTest" />
+			<class name="csrNavigationTestcasess.ConvenienceFeeStateSetUp" />
+			 <class name="csrNavigationTestcasess.AutoManagerReportTest" />
+			 <class name="csrSearchFilterTestCases.searchAllTest" />		
+			<class name="csrNavigationTestcasess.OSGGatewaySetUpTest" /> 
+			 <class name="csrNavigationTestcasess.ReturnReportTest" />
+			<class name="csrNavigationTestcasess.ScheduledPaymentsReportTest" />
+			<class name="csrNavigationTestcasess.GroupsTest" /> 
+			<class name="csrNavigationTestcasess.FileViewerUtilityTest" /> 
+			<class name="csrSearchFilterTestCases.customerLastNameTest" />
 		</classes>
-	</test>
-	
-	<test name="ValidateProductionCustomersLoginTest">
-		<classes>
-			<class name="apLoginTestCases.LoginProductionCustomer" />
-		</classes>
-	</test> 
- 	
-	<test name="ValidateQACustomersTest">
-		<classes>
-			<class name="apLoginTestCases.LoginQaCustomers" />
-		</classes>
-	</test>	
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
+ 

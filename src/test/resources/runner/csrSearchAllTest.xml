@@ -11,8 +11,9 @@
 <test
 		name="QACSRSearchAllTest">
 		<classes>
-			<class name="csrSignInPageTestCase.SignInPageTest" />	
+			<class name="csrSignInPageTestCase.SignInPageTest" />
 			<class name="csrSearchFilterTestCases.searchAllTest" />		
+			<class name="csrSearchFilterTestCases.customerLastNameTest" />	
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -669,6 +669,22 @@ public class Page {
 		// click(Page.driver.findElement(loginbtn));
 
 	}
+	
+	//find customer last name
+	public void customerLastName() {
+		
+		By keyword = By.id("txtSearch");
+		//By lastName = By.xpath("//input[@id='username']");
+		Page.driver.findElement(keyword).sendKeys(config.getProperty("customerLastName"));
+		
+	}
+	// find customer account number
+	public void customerAccountNumber() {
+		//By accountNumber = By.xpath("//input[@id='username']");
+		By keyword = By.id("txtSearch");
+		Page.driver.findElement(keyword).sendKeys(config.getProperty("customerAccountNumber"));
+		
+	}
 
 	/**
 	 * Generate Cfee

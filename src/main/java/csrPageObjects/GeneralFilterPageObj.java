@@ -13,9 +13,9 @@ import pagebase.Page;
 public class GeneralFilterPageObj extends Page{
 
 	private By pageTitle = By.xpath("//*[@id=\"CsrBody\"]/div[4]/div/div/div[1]/div/div/div/ol/li/a");
-	private By quickSearch =By.xpath("") ;
+	private By quickSearch =By.id("quickSearchOptions") ;
 	private By searchAll = By.xpath("//*[@id=\"CsrBody\"]/div[4]/div/div/div[2]/div/div[1]/div/div[2]/div/div[1]/div[1]/label[2]");
-	private By accountNumber = By.xpath("");
+	private By accountNumber = By.id("quickSearchOptionAccountNumber");
 	private By customerLastName = By.id("quickSearchOptionLastName");
 	private By keyword = By.id("txtSearch");
 	private By clearFilter = By.id("btnClear");

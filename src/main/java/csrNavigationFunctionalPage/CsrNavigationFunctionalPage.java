@@ -4,28 +4,45 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 
 import com.relevantcodes.extentreports.LogStatus;
 
 import csrFunctionPage.CsrAdminActivitiesReportFunctionPage;
 import csrFunctionPage.CsrAutoPaymentManagersReportFunctionPage;
+import csrFunctionPage.CsrBankHolydaysFunctionalPage;
 import csrFunctionPage.CsrBatchReportFunctionPage;
+import csrFunctionPage.CsrBatchScheduleFunctionalPage;
+import csrFunctionPage.CsrBillingHierarchySetUpFunctionalPage;
+import csrFunctionPage.CsrClientDetailsFunctionalPage;
+import csrFunctionPage.CsrClientSetUpFunctionalPage;
+import csrFunctionPage.CsrConvenienceFeeStateSetUpFunctionalPage;
+import csrFunctionPage.CsrFileViewerUtilityFunctionalPage;
+import csrFunctionPage.CsrGroupsFunctionalPage;
 import csrFunctionPage.CsrJobsStatusReportFunctionPage;
+import csrFunctionPage.CsrManageUsersFunctionalPage;
+import csrFunctionPage.CsrOSGGatewaySetUpFunctionalPage;
 import csrFunctionPage.CsrActivitiesReportFunctionPage;
 import csrFunctionPage.CsrOsgActivitiesReportFunctionPage;
 import csrFunctionPage.CsrPaymentPlansReportFunctionPage;
 import csrFunctionPage.CsrPaymentReportFunctionPage;
+import csrFunctionPage.CsrProgramsFunctionalPage;
 import csrFunctionPage.CsrRegisteredUsersReportFunctionPage;
 import csrFunctionPage.CsrReturnReportFunctionPage;
 import csrFunctionPage.CsrScheduledPaymentsReportFunctionPage;
+import csrFunctionPage.CsrSupportFunctionalPage;
 import csrFunctionPage.CsrTransactionReportFunctionPage;
+import csrFunctionPage.CsrManageUsersFunctionalPage;
 import csrNavigationPageObjects.CsrGeneralHeaderPageObj;
+import csrNavigationPageObjects.CsrTransactionReportNavigationPageObj;
+ 
 import pagebase.Page;
 
 /**
  * 
  * @author milou.rene
  *version 1.0
+ *Report Navigation 
  */
 public class CsrNavigationFunctionalPage extends Page{
 	 
@@ -33,7 +50,7 @@ public class CsrNavigationFunctionalPage extends Page{
 	Page page = new Page();
 	 
 	/*
-	 * to navigate to all pages  
+	 * to navigate to  Reports pages  
 	 */
 	public CsrActivitiesReportFunctionPage  goToActivityReport() {
 	 
@@ -233,20 +250,20 @@ public class CsrNavigationFunctionalPage extends Page{
 	
 	
 	public CsrScheduledPaymentsReportFunctionPage  goToScheduledPaymentReport() {
-		System.out.println(" here a ");
+		//System.out.println(" here a ");
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		log.debug("Navigating to: Scheduled Payment report");
 		test.log(LogStatus.INFO, "Navigating to: Scheduled Payment report");
-		System.out.println(" here 0 ");
+		//System.out.println(" here 0 ");
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getScheduledPaymentsReport();
-		System.out.println(" here 1 ");
+		//System.out.println(" here 1 ");
 		Actions action = new Actions(driver);
 		elementToHover.click();
 		action.moveToElement(elementToHover).build().perform(); 
-		System.out.println(" here 2 ");
+		//System.out.println(" here 2 ");
 		elementToClick.click();
-		System.out.println(" here 3 ");
+		//System.out.println(" here 3 ");
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrScheduledPaymentsReportFunctionPage();
 		 
@@ -269,5 +286,281 @@ public class CsrNavigationFunctionalPage extends Page{
 		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		return new CsrTransactionReportFunctionPage();
 		 
+	}
+	/*All support navigation 
+	 * Navigate to Support page
+	 */
+	
+	public CsrSupportFunctionalPage goToSupport() {
+	 
+		log.debug("Navigating to: Support Requests");
+		test.log(LogStatus.INFO, "Navigating to: Support Requests");
+		
+		//WebElement elementToHover = csrNavigateTo.getcsrSuportHover();
+		WebElement elementToClick = csrNavigateTo.getcsrSuportHover();
+		 
+		//Actions action = new Actions(driver);
+		//elementToHover.click();
+		//action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrSupportFunctionalPage();
+		
+	}
+	
+	/* All users Navigation 
+	 * Navigate to ManageUsers Pages
+	 */
+	public CsrManageUsersFunctionalPage goToManageUsers() {
+		 
+		log.debug("Navigating to: Manage Users Page");
+		test.log(LogStatus.INFO, "Navigating to: Manage Users Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrUserHover();
+		WebElement elementToClick = csrNavigateTo.getManageUsers();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrManageUsersFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrManageUsersFunctionalPage goToManageRoles() {
+		 
+		log.debug("Navigating to: Manage Role Page");
+		test.log(LogStatus.INFO, "Navigating to: Manage Role Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrUserHover();
+		WebElement elementToClick = csrNavigateTo.getManageRoles();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrManageUsersFunctionalPage();
+		
+	}
+	/* All Set Up Navigation 
+	 * Navigate to Set Up Pages
+	 */
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrClientDetailsFunctionalPage goToClientDetails() {
+		 
+		log.debug("Navigating to: Client Details Page");
+		test.log(LogStatus.INFO, "Navigating to: Client Details Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getClientDetails();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrClientDetailsFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 * 
+	 */
+	public CsrClientSetUpFunctionalPage goToClientSetUp() {
+		 
+		log.debug("Navigating to: Client Set UpPage");
+		test.log(LogStatus.INFO, "Navigating to: Client Set Up Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getClientSetUp();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrClientSetUpFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrBillingHierarchySetUpFunctionalPage goToBillingHierarchySetUp() {
+		 
+		log.debug("Navigating to: Billing Hierarchy Set Up Page");
+		test.log(LogStatus.INFO, "Navigating to: Billing Hierarchy Set Up Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getBillingHierarchySetUp();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new  CsrBillingHierarchySetUpFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrConvenienceFeeStateSetUpFunctionalPage goToConvenienceFeeStateSetUp() {
+		 
+		log.debug("Navigating to: Convenience Fee State Set Up Page");
+		test.log(LogStatus.INFO, "Navigating to: Convenience Fee State Set Up Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getConvenienceFeeSetUp();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrConvenienceFeeStateSetUpFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrBatchScheduleFunctionalPage goToBatchSchedule() {
+		 
+		log.debug("Navigating to: Batch Schedule Page");
+		test.log(LogStatus.INFO, "Navigating to: Batch Schedule Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getBatchSchedule();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrBatchScheduleFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrBankHolydaysFunctionalPage goToBankHolydays() {
+		 
+		log.debug("Navigating to: Bank Holydays Page");
+		test.log(LogStatus.INFO, "Navigating to:  Bank Holydays Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getBankHolydays();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrBankHolydaysFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrOSGGatewaySetUpFunctionalPage goToOSGGatewaySetUp() {
+		 
+		log.debug("Navigating to: OSG Gateway Set Up Page");
+		test.log(LogStatus.INFO, "Navigating to: OSG Gateway Set Up Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getOSGGatewaySetUp();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new  CsrOSGGatewaySetUpFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrProgramsFunctionalPage goToPrograms() {
+		 
+		log.debug("Navigating to: Programs Page");
+		test.log(LogStatus.INFO, "Navigating to: Programs Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getPrograms();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new  CsrProgramsFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrGroupsFunctionalPage goToGroups() {
+		 
+		log.debug("Navigating to: Manage Role Page");
+		test.log(LogStatus.INFO, "Navigating to: Manage Role Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrSetupHover();
+		WebElement elementToClick = csrNavigateTo.getGroups();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrGroupsFunctionalPage();
+		
+	}
+	
+	/*
+	 * Navigate to Manage Role Pages
+	 */
+	public CsrFileViewerUtilityFunctionalPage goToFileViewerUtility() {
+		 
+		log.debug("Navigating to:  File Viewer Utility Page");
+		test.log(LogStatus.INFO, "Navigating to: Manage Role Page");
+		
+		WebElement elementToHover = csrNavigateTo.getCsrUserHover();
+		WebElement elementToClick = csrNavigateTo.getFileViewerUtility();
+		 
+		Actions action = new Actions(driver);
+		//elementToHover.click();
+		action.moveToElement(elementToHover).build().perform(); 
+		elementToClick.click();
+		
+		Page.driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		return new CsrFileViewerUtilityFunctionalPage();
+		
 	}
 }
