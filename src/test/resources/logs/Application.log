@@ -1,25 +1,83 @@
-04/01/2021 15:18:49 devpinoyLogger Config file loaded !!!
-04/01/2021 15:18:49 devpinoyLogger Working with chrome
-04/01/2021 15:19:22 devpinoyLogger Loading the Test Environment from config file
-04/01/2021 15:19:22 devpinoyLogger Test Environment: qacsr
-04/01/2021 15:19:22 devpinoyLogger Application: payment20csr
-04/01/2021 15:19:25 devpinoyLogger Navigating to: https://csrqa.billbridge.com/login/clientlogin
-04/01/2021 15:19:26 devpinoyLogger Page Objects loaded
-04/01/2021 15:19:26 devpinoyLogger CSR SignIn Test Suite Start
-04/01/2021 15:19:28 devpinoyLogger Database connection established
-04/01/2021 15:19:28 devpinoyLogger QACSRSingInTest Test Start
-04/01/2021 15:19:28 devpinoyLogger doLogin  Started
-04/01/2021 15:19:29 devpinoyLogger Web Element found: 
-04/01/2021 15:19:29 devpinoyLogger LoginFunctions loaded
-04/01/2021 15:19:29 devpinoyLogger Login into CSR QA Portal
-04/01/2021 15:19:29 devpinoyLogger Typing in field: userName the value: PayBoxQA
-04/01/2021 15:19:29 devpinoyLogger Typing in field: password the value: Pass@123
-04/01/2021 15:19:29 devpinoyLogger Clicking on Element : Sign in
-04/01/2021 15:19:29 devpinoyLogger Web Element found: 
-04/01/2021 15:19:29 devpinoyLogger DashboardAPFunctions loaded
-04/01/2021 15:19:29 devpinoyLogger doLogin  Successfully passed
-04/01/2021 15:19:30 devpinoyLogger QACSRSingInTest Test Completed
-04/01/2021 15:19:31 devpinoyLogger Driver quit
-04/01/2021 15:19:31 devpinoyLogger Closing Database Connection
-04/01/2021 15:19:31 devpinoyLogger CSR SignIn Test Suite Completed
-04/01/2021 15:19:38 devpinoyLogger Sucessfully Sent mail to All Users
+05/01/2021 15:47:53 devpinoyLogger Config file loaded !!!
+05/01/2021 15:47:53 devpinoyLogger Working with chrome
+05/01/2021 15:48:26 devpinoyLogger Loading the Test Environment from config file
+05/01/2021 15:48:26 devpinoyLogger Test Environment: qacsr
+05/01/2021 15:48:26 devpinoyLogger Application: payment20csr
+05/01/2021 15:48:29 devpinoyLogger Navigating to: https://csrqa.billbridge.com/login/clientlogin
+05/01/2021 15:48:31 devpinoyLogger Page Objects loaded
+05/01/2021 15:48:31 devpinoyLogger CSR Report Navigation Test Suite Start
+05/01/2021 15:48:34 devpinoyLogger Database connection established
+05/01/2021 15:48:34 devpinoyLogger Navigation Report Test Test Start
+05/01/2021 15:48:34 devpinoyLogger doLogin  Started
+05/01/2021 15:48:34 devpinoyLogger Web Element found: 
+05/01/2021 15:48:34 devpinoyLogger LoginFunctions loaded
+05/01/2021 15:48:34 devpinoyLogger Login into CSR QA Portal
+05/01/2021 15:48:34 devpinoyLogger Typing in field: userName the value: PayBoxQA
+05/01/2021 15:48:34 devpinoyLogger Typing in field: password the value: Pass@123
+05/01/2021 15:48:34 devpinoyLogger Clicking on Element : Sign in
+05/01/2021 15:48:34 devpinoyLogger Web Element found: 
+05/01/2021 15:48:34 devpinoyLogger DashboardAPFunctions loaded
+05/01/2021 15:48:34 devpinoyLogger doLogin  Successfully passed
+05/01/2021 15:48:35 devpinoyLogger CsrActivitiesReportTest  Started
+05/01/2021 15:48:35 devpinoyLogger Navigating to: Activity report
+05/01/2021 15:48:37 devpinoyLogger CsrActivitiesReportTest  Failed
+05/01/2021 15:48:38 devpinoyLogger goToAdminActivitiesReportTest  Started
+05/01/2021 15:48:38 devpinoyLogger Navigating to: Activity report
+05/01/2021 15:48:41 devpinoyLogger Web Element found: Admin Activity Report
+05/01/2021 15:48:41 devpinoyLogger CsrAdminActivitiesReportFunctionPage loaded
+05/01/2021 15:48:41 devpinoyLogger goToAdminActivitiesReportTest  Successfully passed
+05/01/2021 15:48:41 devpinoyLogger goToCsrJobStatusReportTest  Started
+05/01/2021 15:48:41 devpinoyLogger Navigating to: JOb Status report
+05/01/2021 15:48:43 devpinoyLogger Web Element found: Job Status Report
+05/01/2021 15:48:43 devpinoyLogger CsrJobsStatusReportPageObj loaded
+05/01/2021 15:48:43 devpinoyLogger goToCsrJobStatusReportTest  Successfully passed
+05/01/2021 15:48:43 devpinoyLogger goToOSGActivitiesReportTest  Started
+05/01/2021 15:48:43 devpinoyLogger Navigating to: OSG Activity report
+05/01/2021 15:48:48 devpinoyLogger Web Element found: OverPeck Authority's Activity Report
+05/01/2021 15:48:48 devpinoyLogger CsrOsgActivitiesReportPageObj loaded
+05/01/2021 15:48:48 devpinoyLogger goToOSGActivitiesReportTest  Successfully passed
+05/01/2021 15:48:48 devpinoyLogger goToAutoPaymentMngReportTest  Started
+05/01/2021 15:48:48 devpinoyLogger Navigating to: Activity report
+05/01/2021 15:48:52 devpinoyLogger Web Element found: 
+05/01/2021 15:48:52 devpinoyLogger AutoPaymentManagerReportPageObj loaded
+05/01/2021 15:48:52 devpinoyLogger goToAutoPaymentMngReportTest  Successfully passed
+05/01/2021 15:48:52 devpinoyLogger goToBatchReportTest  Started
+05/01/2021 15:48:52 devpinoyLogger Navigating to: Batch report
+05/01/2021 15:48:55 devpinoyLogger Web Element found: 
+05/01/2021 15:48:55 devpinoyLogger CsrBatchReportFunctionPage loaded
+05/01/2021 15:48:55 devpinoyLogger goToBatchReportTest  Successfully passed
+05/01/2021 15:48:56 devpinoyLogger goToPaymentPlanReportTest  Started
+05/01/2021 15:48:56 devpinoyLogger Navigating to: PAyment Plan report
+05/01/2021 15:49:00 devpinoyLogger Web Element found: Payment Plans Report
+05/01/2021 15:49:00 devpinoyLogger CsrPaymentPlansReportPageObj loaded
+05/01/2021 15:49:00 devpinoyLogger goToPaymentPlanReportTest  Successfully passed
+05/01/2021 15:49:00 devpinoyLogger goToPaymentReportTest  Started
+05/01/2021 15:49:00 devpinoyLogger Navigating to: Activity report
+05/01/2021 15:49:04 devpinoyLogger Web Element found: Payment Report
+05/01/2021 15:49:04 devpinoyLogger CsrPaymentReportPageObj loaded
+05/01/2021 15:49:04 devpinoyLogger goToPaymentReportTest  Successfully passed
+05/01/2021 15:49:04 devpinoyLogger goToRegisteredUsersReportTest  Started
+05/01/2021 15:49:04 devpinoyLogger Navigating to: Register User report
+05/01/2021 15:49:27 devpinoyLogger Web Element found: Registered Users
+05/01/2021 15:49:27 devpinoyLogger CsrRegisteredUsersReportFunctionPage loaded
+05/01/2021 15:49:27 devpinoyLogger goToRegisteredUsersReportTest  Successfully passed
+05/01/2021 15:49:27 devpinoyLogger goToReturnReportTest  Started
+05/01/2021 15:49:27 devpinoyLogger Navigating to: Return report
+05/01/2021 15:49:29 devpinoyLogger Web Element found: 
+05/01/2021 15:49:29 devpinoyLogger CsrReturnReportPageObj loaded
+05/01/2021 15:49:29 devpinoyLogger goToReturnReportTest  Successfully passed
+05/01/2021 15:49:29 devpinoyLogger goToScheduledPaymentsReportTest  Started
+05/01/2021 15:49:29 devpinoyLogger Navigating to: Scheduled Payment report
+05/01/2021 15:49:32 devpinoyLogger Web Element found: Scheduled Payments Report
+05/01/2021 15:49:32 devpinoyLogger CsrScheduledPaymentsReportFunctionPage loaded
+05/01/2021 15:49:32 devpinoyLogger goToScheduledPaymentsReportTest  Successfully passed
+05/01/2021 15:49:32 devpinoyLogger goToTransactionReportTest  Started
+05/01/2021 15:49:32 devpinoyLogger Navigating to: Transaction report
+05/01/2021 15:49:36 devpinoyLogger Web Element found: 
+05/01/2021 15:49:36 devpinoyLogger CsrScheduledPaymentsReportFunctionPage loaded
+05/01/2021 15:49:36 devpinoyLogger goToTransactionReportTest  Successfully passed
+05/01/2021 15:49:36 devpinoyLogger Navigation Report Test Test Completed
+05/01/2021 15:49:37 devpinoyLogger Driver quit
+05/01/2021 15:49:37 devpinoyLogger Closing Database Connection
+05/01/2021 15:49:37 devpinoyLogger CSR Report Navigation Test Suite Completed
+05/01/2021 15:49:46 devpinoyLogger Sucessfully Sent mail to All Users

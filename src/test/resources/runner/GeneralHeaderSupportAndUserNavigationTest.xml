@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CSR Support and Users header Navigation Test Suite">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener
+			class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		<listener class-name="listeners.listeners" />
+	</listeners>
+<test
+		name="Navigation Support and User Test">
+		<classes>
+			<class name="csrSignInPageTestCase.SignInPageTest" />	
+			 <class name="csrNavigationTestcasess.SupportTest" /> 
+			 <class name="csrNavigationTestcasess.ManageUsersTest" />
+			 <class name="csrNavigationTestcasess.ManageRolesTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

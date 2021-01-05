@@ -55,7 +55,7 @@ public class CsrNavigationFunctionalPage extends Page{
 	public CsrActivitiesReportFunctionPage  goToActivityReport() {
 	 
 		log.debug("Navigating to: Activity report");
-		test.log(LogStatus.INFO, "Navigating to: Rctivity report");
+		test.log(LogStatus.INFO, "Navigating to: Activity Report");
 		
 		WebElement elementToHover = csrNavigateTo.getCsrReportHover();
 		WebElement elementToClick = csrNavigateTo.getCsrActivitiesReport();
