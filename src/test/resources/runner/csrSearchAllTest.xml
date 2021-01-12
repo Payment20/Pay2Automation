@@ -12,8 +12,13 @@
 		name="QACSRSearchAllTest">
 		<classes>
 			<class name="csrSignInPageTestCase.SignInPageTest" />
-			<class name="csrSearchFilterTestCases.searchAllTest" />		
-			<class name="csrSearchFilterTestCases.customerLastNameTest" />	
+			<class name="csrSearchFilterTestCases.quickSearchTest" />
+			<class name="csrSearchFilterTestCases.accountNumberTest" />	
+			<class name="csrSearchFilterTestCases.customerLastNameTest" /> 
+			<class name="csrSearchFilterTestCases.searchAllTest" />	 
+			<class name="csrSearchFilterTestCases.clearFilterTest" />	
+			<class name="csrSearchFilterTestCases.addCustomerTest" />
+				
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

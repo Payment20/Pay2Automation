@@ -20,6 +20,4 @@ public class customerLastNameTest extends TestBase {
 		Reporter.log("Search by Customer Laste name Successfully Executed!!!");
 	}
 	
-	
-
 }

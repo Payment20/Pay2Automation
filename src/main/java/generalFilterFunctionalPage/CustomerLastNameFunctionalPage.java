@@ -34,7 +34,7 @@ public class CustomerLastNameFunctionalPage extends Page{
 		Assert.assertTrue(generalFilterPageObj.isElementPresent(generalFilterPageObj.byPageTitle()),"Customer Search page title not found!!");
 		
 		log.debug("DashboardAPFunctions loaded");
-		test.log(LogStatus.INFO, "Opening Dashboard Page in Admin Portal");
+		test.log(LogStatus.INFO, "Opening   Page   Portal");
 		
 	}
 	/**
@@ -43,15 +43,13 @@ public class CustomerLastNameFunctionalPage extends Page{
  
 	public   DashboardFunctionsAP checkSearchCustomerLastNameRadioBtn() {
 		 
-		clickSelect(generalFilterPageObj.getQuickSearch());
+		//clickSelect(generalFilterPageObj.getQuickSearch());
 		isElementPresent(generalFilterPageObj.byCustomerLastName());
 		clickSelect(generalFilterPageObj.getCustomerLastName());
 		isElementPresent(generalFilterPageObj.byKeyword());
 		
-		//type(signInPageObj.getUserName(), "userName", config.getProperty("Pay2User"));
-		System.out.println("1 ");
+		 
 		type(generalFilterPageObj.getKeyword(), "keyword", config.getProperty("customerLastName"));
-		System.out.println("2 ");
 		isElementPresent(generalFilterPageObj.bySearch());
 		clickSelect(generalFilterPageObj.getSearch());
 		

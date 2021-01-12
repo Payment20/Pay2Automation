@@ -6,13 +6,8 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import csrPageObjects.GeneralFilterPageObj;
 import pagebase.Page;
-/**
- * 
- * @author milou.rene
- *@version  1.0
- */
-public class AccountNumberFunctionalPage extends Page{
-	
+
+public class ClearFilterFunctionalPage extends Page{
 	
 	/**
 	 * Instance of the Page Object used in the General Filter Page Obj.
@@ -26,27 +21,24 @@ public class AccountNumberFunctionalPage extends Page{
 	 * </p>
 	 * 
 	 */
-	public AccountNumberFunctionalPage() {
+	public ClearFilterFunctionalPage() {
 		
 		//System.out.println(generalFilterPageObj.getPageTitle().getText());
 		
-		Assert.assertTrue(generalFilterPageObj.isElementPresent(generalFilterPageObj.byPageTitle()),"Account Number Search page title not found!!");
+		Assert.assertTrue(generalFilterPageObj.isElementPresent(generalFilterPageObj.byPageTitle()),"Clear filter page title not found!!");
 		
 		log.debug("DashboardAPFunctions loaded");
-		test.log(LogStatus.INFO, "Opening Account Number Page  ");
+		test.log(LogStatus.INFO, "Opening Dashboard Page in Admin Portal");
 		
 	}
 	/**
 	 * Validate SearchAll function  
 	 */
  
-	public void checkAccountNumberRadioBtn() {
+	public void clickClearFilterRadioBtn() {
 		 
-		isElementPresent(generalFilterPageObj.byAccountNumber());
-		clickSelect(generalFilterPageObj.getAccountNumber());
-		isElementPresent(generalFilterPageObj.byQuickSearch());
-		clickSelect(generalFilterPageObj.getQuickSearch());
-		
+		isElementPresent(generalFilterPageObj.byClearFilter());
+		clickSelect(generalFilterPageObj.getClearFilter());		
 	}
 
 }

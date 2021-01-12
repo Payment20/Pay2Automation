@@ -1,18 +1,24 @@
 package csrSearchFilterTestCases;
 
 import org.testng.Reporter;
+import org.testng.annotations.Test;
 
- 
 import automationPayment20.TestBase;
+import generalFilterFunctionalPage.QuickSearchFunctionalPage;
 
 public class quickSearchTest extends TestBase {
 	
-	public void doSearch() {
-		
+	/**
+	 * 
+	 * @author milou.rene
+	 *
+	 */
+		@Test
+		public void doQuickSearch() {
 		 
-		
-		
-		Reporter.log("quick search Successfully Executed!!!");
-	}
+			QuickSearchFunctionalPage quickSearchFunctionalPage = new QuickSearchFunctionalPage();
+			quickSearchFunctionalPage.checkQuickSearchRadioBtn();;
+			Reporter.log("Quick Search Successfully Executed!!!");
+		}
 
 }

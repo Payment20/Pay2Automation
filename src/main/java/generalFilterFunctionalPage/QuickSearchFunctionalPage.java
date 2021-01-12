@@ -6,12 +6,9 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import csrPageObjects.GeneralFilterPageObj;
 import pagebase.Page;
-/**
- * 
- * @author milou.rene
- *@version  1.0
- */
-public class AccountNumberFunctionalPage extends Page{
+
+public class QuickSearchFunctionalPage extends Page {
+	
 	
 	
 	/**
@@ -26,24 +23,24 @@ public class AccountNumberFunctionalPage extends Page{
 	 * </p>
 	 * 
 	 */
-	public AccountNumberFunctionalPage() {
+	public QuickSearchFunctionalPage() {
 		
 		//System.out.println(generalFilterPageObj.getPageTitle().getText());
 		
-		Assert.assertTrue(generalFilterPageObj.isElementPresent(generalFilterPageObj.byPageTitle()),"Account Number Search page title not found!!");
+		Assert.assertTrue(generalFilterPageObj.isElementPresent(generalFilterPageObj.byPageTitle()),"Quick Search page title not found!!");
 		
 		log.debug("DashboardAPFunctions loaded");
-		test.log(LogStatus.INFO, "Opening Account Number Page  ");
+		test.log(LogStatus.INFO, "Opening Customer Search Page  ");
 		
 	}
 	/**
 	 * Validate SearchAll function  
 	 */
  
-	public void checkAccountNumberRadioBtn() {
+	public void checkQuickSearchRadioBtn() {
 		 
-		isElementPresent(generalFilterPageObj.byAccountNumber());
-		clickSelect(generalFilterPageObj.getAccountNumber());
+		isElementPresent(generalFilterPageObj.byQuickSearch());
+		clickSelect(generalFilterPageObj.getQuickSearch());
 		isElementPresent(generalFilterPageObj.byQuickSearch());
 		clickSelect(generalFilterPageObj.getQuickSearch());
 		
