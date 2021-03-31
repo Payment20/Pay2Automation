@@ -49,7 +49,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
 		<dependency>
 		    <groupId>com.google.guava</groupId>
 		    <artifactId>guava</artifactId>
-		    <version>27.0.1-jre</version>
+		    <version>29.0-jre</version>
 		</dependency>
 		
 		 <!-- https://mvnrepository.com/artifact/org.uncommons/reportng -->
